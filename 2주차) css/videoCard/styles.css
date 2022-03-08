@@ -1,0 +1,71 @@
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Noto", sans-serif;
+  font-size: 14px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* video-card */
+.video-card-item {
+  width: 270px;
+  height: 270px;
+  margin: 8px;
+}
+
+.thumbnail-img {
+  width: 100%;
+}
+
+.video-details {
+  align-items: flex-start;
+  margin-top: 12px;
+	padding-right: 24px;
+}
+
+.channel-img {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.video-details h3 {
+  font-weight: 500;
+	margin-bottom: 6px;
+}
+
+.info {
+	color: #606060;
+	font-size: 12px;
+  line-height: 1.3rem;
+}
+
+.view-info::after {
+  content: "﹒";
+}
