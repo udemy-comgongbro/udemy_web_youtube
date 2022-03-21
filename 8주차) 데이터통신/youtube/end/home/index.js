@@ -23,7 +23,7 @@ const $contentBox = document.querySelector("#contentBox");
 	function videoCardTemplate (data) {
 		const videoItem = `
 			<div class="videoItemContainer">
-				<a href=${`https://www.youtube.com/watch?v=${data.id}`}>
+				<a href="/8주차)%20데이터통신/youtube/end/play/play.html" data-id=${data.id}>
 						<div class="videoThumbnailContainer">
 								<img class="thumbnailImg" src=${data.snippet.thumbnails.high.url} />
 						</div>

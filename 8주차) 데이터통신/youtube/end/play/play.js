@@ -119,17 +119,3 @@ function videoCardTemplate(data) {
 
   $recommendedVideoList.insertAdjacentHTML("beforeend", videoItem);
 }
-
-let params = new URLSearchParams(document.location.search);
-let id = params.get("v"); // is the string "Jonathan"
-
-function fetchVideoData(){
-	fetch(
-    "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&id=bCx-bsa_1p8&key=AIzaSyA1CXsnHqpp_MZAMi0H3gfWHC1b1xOiJTg"
-  )
-    .then((response) => response.json())
-    .then((result) => console.log('id', result.items))
-    .catch((error) => console.log("error", error));
-}
-
-fetchVideoData();
